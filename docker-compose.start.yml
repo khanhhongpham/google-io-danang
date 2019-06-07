@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: app
-      dockerfile: Dockerfile.v1
+      dockerfile: Dockerfile.v2
     ports:
       - 8080:8080
     depends_on: 
