@@ -1,0 +1,14 @@
+runtime: custom
+env: flex
+resources:
+  cpu: 1
+  memory_gb: 2
+  disk_size_gb: 10
+env_variables:
+  CLOUDSQL_INSTANCE: 
+  XSS_PROTECTION: "False"
+  PG_HOST: 127.0.0.1
+  PG_PORT: 5432
+  PG_DB: xvulb
+  PG_USER: postgres
+  PG_PASS: sectest.team

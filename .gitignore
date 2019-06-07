@@ -1,0 +1,30 @@
+target/
+bin/
+!.mvn/placeholder
+.m2
+.vscode
+.mvn/
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+.DS_Store
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+app/file.json
+app/app.yaml

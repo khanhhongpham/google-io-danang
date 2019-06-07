@@ -1,0 +1,30 @@
+version: '3.2'
+
+services:
+  app:
+    build:
+      context: app
+      dockerfile: Dockerfile.first
+    ports:
+      - 8080:8080
+    depends_on: 
+      - db
+    environment:
+      XSS_PROTECTION: "False"
+      PG_HOST: db
+      PG_PORT: 5432
+      PG_DB: xvulb
+      PG_USER: xvulb
+      PG_PASS: password
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: xvulb
+      POSTGRES_USER: xvulb
+      POSTGRES_PASSWORD: password
+      
+    ports:
+      - 5432:5432
+    
+    
