@@ -1,4 +1,4 @@
-FROM java:8-jre-alpine
+FROM openjdk:8-jre-alpine
 ADD XVulB-*.war /opt/app.war
 ADD application.properties /opt/application.properties
 ADD startup.sh /opt/startup.sh
